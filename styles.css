@@ -1,0 +1,177 @@
+body{
+  font-family: "Times New Roman", Times, serif;
+  background: linear-gradient(to top left, #fff 50%, #00796b 50%);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 1.5rem auto; 
+  margin-bottom: 0px;
+  min-height: 100vh;
+  /* border: 2px solid red;  */
+  padding: 0.5rem; 
+  max-width: 55rem; 
+  box-sizing: border-box; 
+}
+
+.main-heading{
+  text-align: center;
+  
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.sub-heading{
+  padding: 0.5rem;
+  color: gray;
+  font-weight: lighter;
+}
+
+input {
+  box-sizing: border-box;
+  padding: 0.25rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none; 
+}
+
+input:focus, title  {
+  border-color: #007bff; 
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); 
+}
+
+input:disabled {
+  background-color: #f2f2f2; 
+  cursor: not-allowed; 
+}
+
+.container{
+  display: flex;
+  padding: 0.5rem;
+}
+
+.content1{
+  flex:1.75;
+}
+
+.title{
+  padding-left: 0.25rem;
+}
+.content2{
+  flex:1.25;
+}
+
+.radio-btn{
+  padding-left: 0.5rem;
+}
+
+/* #trim-space{
+  white-space: nowrap;
+} */
+
+.mn{
+max-width: 7rem;
+}
+
+.gender{
+  padding-left: 2rem;
+}
+
+.birth{
+  margin-left: 1.75rem;
+}
+
+.ews{
+  padding-left: 5rem;
+}
+
+.ml{
+  margin-left: 3rem;
+}
+
+.edu {
+ padding: 0.5rem;
+ padding-top: 1rem;
+ 
+}
+
+.marks{
+  display: flex;
+  
+}
+
+.data1{
+  flex: 1.75
+}
+
+.data2{
+  flex:1.25
+}
+
+.button {
+  padding: 10px 20px;
+  border: none;
+  color: #fff; 
+  background-color: #00796b;
+  width: 150px; 
+  margin: 0 auto; 
+  cursor: pointer; 
+  border-radius: 2rem;
+  margin-top: 10rem;
+}
+
+.square{
+  margin-top: 1rem;
+}
+
+#twelve{
+  margin-left: 0.75rem;
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+  body{
+    background: linear-gradient(to bottom, #add8e6, #98fb98);;
+  }
+  .form {
+    background: linear-gradient(to bottom, #add8e6, #98fb98);
+    max-width: 100%; 
+    
+  }
+
+  .container, .marks {
+    flex-direction: column; 
+  }
+
+  .content1,
+  .content2 {
+    flex: none; 
+    width: 100%; 
+    padding: 0.5rem; 
+  }
+
+  .mn{
+    max-width: 15rem;
+  }
+  .title {
+    margin-top: 0.5rem; 
+  }
+
+  .button{
+    background-color: #ddf2eb; 
+    color: black;
+  }
+
+  #twelve{
+    margin-left: 0;
+  }
+}
+
+
+

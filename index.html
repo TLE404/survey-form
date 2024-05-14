@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <form class="form">
+      <heading class="main-heading">Survey Form</heading>
+      <heading class="sub-heading">Please fill all the details in the form</heading>
+      <div class="container">
+        <div class="content1">
+          Applicant's Name &nbsp
+          <select class="title">
+            <option>--Select--</option>
+            <option>Mr</option>
+            <option>Ms</option>
+            <option>Mrs</option>
+          </select>
+          <input type="text" placeholder="Enter your name" />
+        </div>
+        <div class="content2">
+          Care of
+          <label class="radio-btn"
+            >Parents<input type="radio" name="relation" /> </label
+          >
+          <label>Guardian<input type="radio" name="relation" /> </label>
+        </div>
+      </div>
+      <div class="container" id="trim-space">
+        <div class="content1">
+          Father's Name &nbsp
+          <select disabled>
+            <option>Mr</option>
+          </select>
+          <input type="text" placeholder="Enter the name" />
+        </div>
+        <div class="content2">
+          Mother's Name &nbsp
+          <select disabled>
+            <option>Mrs</option>
+          </select>
+          <input class="mn" type="text" placeholder="Enter the name" />
+        </div>
+        
+      </div>
+      <div class="container">
+        <div class="content1">
+          Gender 
+          <label class="gender "> Male<input type="radio" name="relation"/></label>
+          <label> Female<input type="radio" name="relation"/></label>
+          <label> Others<input type="radio" name="relation"/></label>
+        </div>
+        <div class="content2">
+          Date of Birth
+          <input class="birth" type="date" />
+        </div>
+      </div>
+      <div class="container">
+        <div class="content1">
+            Maritial Status
+            <select class="birth">
+                <option>--Select--</option>
+                <option>Married</option>
+                <option>Unmarried</option>
+              </select>
+          
+        </div>
+        <div class="content2">
+            Category
+            <select class="ml">
+                <option>--Select--</option>
+                <option>General</option>
+                <option>OBC</option>
+                <option>SC/ST</option>
+              </select>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content1">
+            Handicapped
+            <label class="birth"> No<input type="radio" name="relation"/></label>
+            <label> Yes<input type="radio" name="relation"/></label>
+          
+        </div>
+        <div class="content2">
+            Ex-Serviceman
+            <label class="birth"> No<input type="radio" name="relation"/></label>
+            <label> Yes<input type="radio" name="relation"/></label>
+        </div>
+      </div>
+      <div class="container">
+        <div class="content1">
+            EWS
+            <label class="ews"> No<input type="radio" name="relation"/></label>
+            <label> Yes<input type="radio" name="relation"/></label>
+          
+        </div>
+        <div class="content2">
+            Religion
+            <select class="ml">
+                <option>--Select--</option>
+                <option>Hinduism</option>
+                <option>Islam</option>
+                <option>Sikhism</option>
+                <option>Christianity</option>
+              </select>
+        </div>
+      </div>
+      <div class="edu">
+        Education Details
+        <div class="marks">
+            <div class="data1">
+                <ol type="I">
+                    <li>
+                        Graduation
+                        <ul>
+                            <li type="square">
+                                Batch 
+                                <input type="number" />
+                              </li>
+                            <li type="square" class="square">
+                                Percentage
+                                <input type="number" />
+                              </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+            <div class="data2">
+                <ol type="I" start="2">
+                    <li>
+                        12th class
+                        <ul>
+                            <li type="square">
+                                Passing Year 
+                                <input type="number" class="mn" />
+                              </li>
+                              <li type="square" class="square">
+                                Percentage
+                                <input type="number" class="mn" id="twelve"/>
+                              </li>
+                        </ul>
+                    </li>
+                </ol>
+            </div>
+
+        </div>
+      </div>
+      <button class="button">
+        Submit
+      </button>
+    </form>
+  </body>
+</html>
