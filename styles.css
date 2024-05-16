@@ -1,18 +1,20 @@
-body{
+body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background: linear-gradient(to bottom, #a5d6a7 0%, #4caf50 100%);
-  height: 100vh;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .form-container {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-height: 100vh;
   padding: 20px;
-  margin-top: 20px;
+  width: 100%;
 }
 
 form {
@@ -21,13 +23,13 @@ form {
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
   width: 100%;
-  max-width: 1100px; 
+  max-width: 1100px;
 }
 
-.title{
-  font-size: 1.75rem; 
+.title {
+  font-size: 1.75rem;
   font-weight: bold;
-  color: #007200
+  color: #007200;
 }
 
 .form-header {
@@ -36,22 +38,24 @@ form {
 
 .form-section {
   display: flex;
-  justify-content: space-between;
-  gap: 30px; 
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-direction: row;
 }
 
 .left-column, .right-column {
-  flex: 1; 
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 300px;
 }
 
-.age{
+.age {
   max-width: 400px;
   display: flex;
-  
 }
 
-.left-age{
-  padding-right: 50px
+.left-age {
+  padding-right: 50px;
 }
 
 h2 {
@@ -63,8 +67,8 @@ label {
   margin-top: 10px;
 }
 
-input{
-  color:#007200;
+input {
+  color: #007200;
 }
 
 input::placeholder {
@@ -78,17 +82,16 @@ input[type="email"], input[type="text"], select, textarea {
   margin-top: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  
 }
 
-textarea{
+textarea {
   min-height: 50px;
-  color:#007200;
+  color: #007200;
 }
 
-input[type="radio"],select {
+input[type="radio"], select {
   margin-right: 10px;
-  color:#007200;
+  color: #007200;
 }
 
 button {
@@ -103,13 +106,11 @@ button {
   box-sizing: border-box;
 }
 
-label{
+label {
   font-weight: bold;
 }
 
 button:hover {
   background-color: darkgreen;
 }
-
-
 
